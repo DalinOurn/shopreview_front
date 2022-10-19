@@ -6,9 +6,7 @@ pipeline {
         dockerImage = ''
     }
 
-    tools {
-    nodejs 'nodejs'
-    }
+ 
     stages {
 
         stage('git clone frontend') {
