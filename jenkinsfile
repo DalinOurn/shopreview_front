@@ -13,7 +13,7 @@ pipeline {
 
         stage('git clone frontend') {
             steps {
-                git 'https://github.com/AhTheary/DevOps-Client.git'
+                git 'https://github.com/DalinOurn/shopreview_front.git'
 
             }
         }
