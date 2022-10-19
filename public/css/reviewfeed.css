@@ -1,0 +1,142 @@
+/* .btn_create_review {
+    position: relative;
+    margin: 15px auto;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+
+.btn_create_review label {
+    position: absolute;
+}
+
+.btn_create_review input[type="text"] {
+    width: 70%;
+    position: absolute;
+    margin-left: 13%;
+    height: 50px;
+}
+
+.btn_create_review button {
+    position: absolute;
+    right: 40px;
+    background-color: #544A4A;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.wrapper_body_review {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+}
+
+.box_card_review {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border: 1px solid #E5E5E5;
+}
+
+.box_card_left {
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+
+.box_card_left .user-name {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.box_card_left .user-name .icon {
+    font-size: 38px;
+}
+
+.box_card_left .user-name span {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.box_card_left .img-post {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.box_card_left .img-post img {
+    width: 95%;
+    height: 80%;
+}
+
+.box_card_right {
+    width: 50%;
+    height: 100%;
+}
+
+.like {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.like .icon {
+    font-size: 38px;
+    position: absolute;
+    right: 10%;
+    color: pink;
+}
+
+.card-detail {
+    width: 100%;
+    height: 85%;
+}
+
+.card-detail>div {
+    padding-bottom: 25px;
+}
+
+input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    border: 1px solid #E5E5E5;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+input[type=text],
+input[type=submit] {
+    border-radius: .25rem;
+    padding: 8px;
+    padding: .6rem
+}
+
+input[type=submit] {
+    cursor: pointer
+} */

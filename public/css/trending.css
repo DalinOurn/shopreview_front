@@ -1,0 +1,158 @@
+#app {
+    height: 100%
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+
+/* body {
+    background: rgb(204, 35, 35);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+} */
+
+.title {
+    margin: 12px auto;
+    width: 92%;
+    height: 20%;
+    align-items: center;
+    display: flex;
+}
+
+.swiper {
+    width: 92%;
+    height: 60vh;
+}
+
+.swiper-slide {
+    position: relative;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #eee;
+    transition: transform .2s;
+}
+
+.swiper-slide img:hover {
+    -ms-transform: scale(1.05);
+    /*IE9*/
+    -webkit-transform: scale(1.05);
+    /*Safari3-8*/
+    transform: scale(1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.swiper-slide img:hover {
+    box-shadow: 10px 10px 5px lightblue inset;
+    box-shadow: 0 8px 8px -4px lightblue;
+}
+
+.swiper-slide .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .box .user-name {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide .box .user-name .profile-card {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide .box .user-name .hearth {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(221, 210, 210);
+}
+
+
+/* .swiper-slide .box .user-name .hearth i {
+    
+} */
+
+.swiper-slide .box .user-name .hearth i:hover {
+    color: rgb(255, 0, 85);
+}
+
+.swiper-slide .box .img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.swiper-slide .box .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .box .star-review {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.swiper-slide .box .star-review .star {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.swiper-slide .box .star-review .count-review {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.swiper-slide .box .des {
+    width: 100%;
+    height: 20%;
+}

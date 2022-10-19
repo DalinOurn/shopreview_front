@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu-button {
+    /* position: absolute; */
+    display: inline-block;
+    top: 0;
+    /* right: 0; */
+    /* padding: 7px 20px; */
+    color: #FFF;
+    z-index: 100;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.menu-wrap {
+    background-color: #544F4F;
+    padding: 40px 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    position: fixed;
+    width: 300px;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    z-index: 999;
+}
+
+.menu-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 900;
+}
+
+.menu-close:hover {
+    background-color: rgba(236, 69, 69, 1);
+    cursor: pointer;
+}
+
+.menu-wrap:hover .menu-close {
+    opacity: 1;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked+.menu-wrap {
+    right: 0;
+}
+
+.menu-toggle:checked~.menu-overlay {
+    display: block;
+}
+
+.menu-title {
+    color: #FFF;
+    padding-left: 40px;
+    font-weight: 300;
+}
+
+.menu-list {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: inherit;
+    display: block;
+    overflow: hidden;
+}
+
+.menu-wrap:hover .menu-list {
+    overflow-y: auto;
+}
+
+.menu-list ul {
+    list-style-type: none;
+}
+
+.menu-list li {
+    display: block;
+}
+
+.menu-list li:first-child {
+    border-top: medium none;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 10px 40px;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    background: #359BED;
+}
+
+.menu-list li a:active {
+    background: #666;
+}

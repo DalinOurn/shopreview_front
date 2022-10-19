@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper_browse {
+    margin: 17vh 0 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.filter {
+    margin: 0 8px;
+    width: 20%;
+    height: auto;
+    position: fixed;
+    border: 1px solid #eee;
+}
+
+.filter h2 {
+    border-bottom: 1px solid #eee;
+    margin: 2%;
+    padding-bottom: 16px;
+}
+
+.filter .category_drop_down {
+    margin: 16px 0;
+}
+
+#sortBy {
+    margin-left: 54px
+}
+
+#sortBy,
+#categories {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #eee;
+    font-size: 18px;
+    color: #000000;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+    cursor: pointer;
+}
+
+.category_drop_down label {
+    margin: 2%;
+    font-size: 26px;
+    color: rgb(94, 83, 83);
+}
+
+.list_store {
+    margin-left: 21%;
+    width: 78.5%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+}
+
+.list_store .box {
+    margin: 8px 8px;
+    width: 23%;
+    height: 60vh;
+    border: 1px solid #eee;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.list_store .box:hover {
+    box-shadow: 8px 8px 8px -4px lightblue;
+    -ms-transform: scale(1.05);
+    /*IE9*/
+    -webkit-transform: scale(1.05);
+    /*Safari3-8*/
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.list_store .box .user-name {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.list_store .box .user-name .profile-card {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list_store .box .user-name .hearth {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(221, 210, 210);
+}
+
+.list_store .box .user-name .hearth i:hover {
+    color: palevioletred;
+}
+
+.list_store .box .img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.list_store .box .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.list_store .box .star-review {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.list_store .box .star-review .star {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.list_store .box .star-review .count-review {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.list_store .box .des {
+    width: 100%;
+    height: 20%;
+}
+
+.page {
+    margin: 8px auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.page a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0px 2px;
+}
+
+.page a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.page .previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.page .next {
+    background-color: #04AA6D;
+    color: white;
+}
