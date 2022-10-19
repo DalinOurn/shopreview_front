@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         registry = "dalinourn/shoptest"
-        registryCredential = 'dockerhub_id'
+        registryCredential = 'macDell10'
         dockerImage = ''
     }
 
