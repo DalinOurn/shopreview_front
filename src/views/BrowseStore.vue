@@ -47,7 +47,7 @@
               <i class="bx bxs-heart" @click="addFovorite"></i>
             </div>
           </div>
-          <router-link :to="`http://13.230.86.26:3001/store/${store._id}`">
+          <router-link :to="`http://52.192.176.11:3001/store/${store._id}`">
             <div class="img">
               <img
                 :src="store.imageUrl"
@@ -68,7 +68,7 @@
             <div class="line-clamp">Des: {{ store.desc }}</div>
             <div>Location: {{ store.location }}</div>
             <div>
-              <router-link :to="`http://13.230.86.26:3001/store/${store._id}`">see more</router-link>
+              <router-link :to="`http://52.192.176.11:3001/store/${store._id}`">see more</router-link>
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default {
 
     //Updated by Nak 15/06
     async getCategory() {
-      const res = await fetch(`http://13.230.86.26:3001/category/all`, {
+      const res = await fetch(`http://52.192.176.11:3001/category/all`, {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -129,7 +129,7 @@ export default {
     async getStore(page, category) {
       console.log('TEST' + category)
       const res = await fetch(
-        `http://13.230.86.26:3001/store/all?page=${page}&category=${category}`,
+        `http://52.192.176.11:3001/store/all?page=${page}&category=${category}`,
         {
           method: 'GET',
           credentials: 'include',

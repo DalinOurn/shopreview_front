@@ -48,7 +48,7 @@ export default {
   methods: {
     async deleteItem(post) {
       console.log('delete item', post)
-      const res = await fetch('http://13.230.86.26:3001/post/delete', {
+      const res = await fetch('http://52.192.176.11:3001/post/delete', {
         method: 'DELETE',
         credentials: 'include',
         headers: {
@@ -63,7 +63,7 @@ export default {
       this.getPost()
     },
     async getPost() {
-      const res = await fetch('http://13.230.86.26:3001/post/all', {
+      const res = await fetch('http://52.192.176.11:3001/post/all', {
         method: 'GET',
         credentials: 'include',
         headers: {
