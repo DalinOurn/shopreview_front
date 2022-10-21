@@ -16,7 +16,7 @@ export default {
   },
   methods: {
       async subComment() {
-      const res = await fetch(`http://52.192.176.11:3001/comment/create`, {
+      const res = await fetch(`http://52.68.75.235:3001/comment/create`, {
         method: "POST",
         credentials: "include",
         headers: {
