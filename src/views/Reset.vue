@@ -65,7 +65,7 @@ export default {
       let user_id = this.$route.query.user_id;
       console.log("user id", user_id);
 
-      const res = await fetch("http://54.95.232.47:3001/user/change-password", {
+      const res = await fetch("http://18.183.54.118:3001/user/change-password", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
