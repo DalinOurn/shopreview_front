@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     async submit(){
-        const res = await fetch('http://18.183.54.118:3001/feedback/create', {
+        const res = await fetch('http://54.199.186.190:3001/feedback/create', {
         method: 'POST',
         credentials: 'include',
         headers: {

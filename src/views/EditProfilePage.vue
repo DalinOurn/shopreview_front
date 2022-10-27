@@ -204,7 +204,7 @@ export default {
     //update paasword user
     async updatePasswordUser() {
       this.message = false
-      const res = await fetch('http://18.183.54.118:3001/user/update-password', {
+      const res = await fetch('http://54.199.186.190:3001/user/update-password', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -234,7 +234,7 @@ export default {
     },
     async updateUser() {
       console.log('update user', this.me)
-      const res = await fetch('http://18.183.54.118:3001/user/update', {
+      const res = await fetch('http://54.199.186.190:3001/user/update', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -251,7 +251,7 @@ export default {
     },
 
     async getMe() {
-      const res = await fetch('http://18.183.54.118:3001/auth/me', {
+      const res = await fetch('http://54.199.186.190:3001/auth/me', {
         method: 'GET',
         credentials: 'include',
         headers: {
