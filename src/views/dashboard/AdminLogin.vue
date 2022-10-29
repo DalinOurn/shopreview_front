@@ -15,7 +15,7 @@ export default {
     async onSubmit(e) {
       e.preventDefault()
 
-      const res = await fetch('http://3.112.52.223:3001/auth/adminLogin', {
+      const res = await fetch('http://35.76.114.50:3001/auth/adminLogin', {
         method: 'POST',
         credentials: 'include',
         headers: {
