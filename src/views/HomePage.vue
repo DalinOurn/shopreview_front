@@ -45,7 +45,6 @@ export default {
 
     const resData = await res.json()
 
-    
     this.stores = resData.data.stores.docs
     console.log(this.stores);
   },
