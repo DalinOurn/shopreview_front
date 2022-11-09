@@ -170,7 +170,7 @@ export default {
   methods: {
     async getStore() {
       const res = await fetch(
-        "http://54.168.147.143:3001/store/all?item_per_page=1000",
+        "http://13.231.249.234:3001/store/all?item_per_page=1000",
         {
           method: "GET",
           credentials: "include",
@@ -224,8 +224,8 @@ export default {
 
     async storeActions() {
       let url = "";
-      if (this.action == "create") url = "http://54.168.147.143:3001/store/create";
-      else url = "http://54.168.147.143:3001/store/update";
+      if (this.action == "create") url = "http://13.231.249.234:3001/store/create";
+      else url = "http://13.231.249.234:3001/store/update";
 
       console.log("create store");
       console.log(this.store);
@@ -247,7 +247,7 @@ export default {
 
     async deleteItem(store) {
       console.log("delete item", store);
-      const res = await fetch("http://54.168.147.143:3001/store/delete", {
+      const res = await fetch("http://13.231.249.234:3001/store/delete", {
         method: "DELETE",
         credentials: "include",
         headers: {
@@ -269,7 +269,7 @@ export default {
       let formData = new FormData();
       formData.append("file", e.target.files[0]);
 
-      const upload_image = await fetch("http://54.168.147.143:3001/upload/image", {
+      const upload_image = await fetch("http://13.231.249.234:3001/upload/image", {
         method: "POST",
         credentials: "include",
         body: formData,
@@ -282,7 +282,7 @@ export default {
     },
 
     async getCategories() {
-      const res = await fetch("http://54.168.147.143:3001/category/all", {
+      const res = await fetch("http://13.231.249.234:3001/category/all", {
         method: "GET",
         credentials: "include",
         headers: {
