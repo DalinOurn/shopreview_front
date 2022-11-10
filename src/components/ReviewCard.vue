@@ -84,7 +84,7 @@ export default {
 
 
     async favorite(store_id) {
-      const user = await fetch('http://54.65.83.255:3001/auth/me', {
+      const user = await fetch('http://18.182.56.29:3001/auth/me', {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -95,7 +95,7 @@ export default {
       const userData = await user.json(); 
       
       //add to favorite
-       const addFav = await fetch('http://54.65.83.255:3001/favorite/create', {
+       const addFav = await fetch('http://18.182.56.29:3001/favorite/create', {
         method: 'POST',
         credentials: 'include',
         headers: {
