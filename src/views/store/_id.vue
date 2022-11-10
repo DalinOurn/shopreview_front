@@ -34,7 +34,7 @@ export default {
     //create review
     async subReview() {
       console.log("TEST", this.commentReview, this.rating_star);
-      const res = await fetch(`http://54.248.141.55:3001/review/create`, {
+      const res = await fetch(`http://43.206.149.140:3001/review/create`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -54,7 +54,7 @@ export default {
     //get review
     async getReview() {
       const res = await fetch(
-        `http://54.248.141.55:3001/review/all?storeId=${this.id}`,
+        `http://43.206.149.140:3001/review/all?storeId=${this.id}`,
         {
           method: "GET",
           credentials: "include",
@@ -71,7 +71,7 @@ export default {
 
     async favorite(store_id) {
       alert('Add to favorite successfully')
-      const user = await fetch('http://54.248.141.55:3001/auth/me', {
+      const user = await fetch('http://43.206.149.140:3001/auth/me', {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -82,7 +82,7 @@ export default {
       const userData = await user.json(); 
       
       //add to favorite
-       const addFav = await fetch('http://54.248.141.55:3001/favorite/create', {
+       const addFav = await fetch('http://43.206.149.140:3001/favorite/create', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -101,7 +101,7 @@ export default {
   async created() {
     this.getReview();
     let id = this.$route.params.id;
-    const res = await fetch(`http://54.248.141.55:3001/store/id/${id}`, {
+    const res = await fetch(`http://43.206.149.140:3001/store/id/${id}`, {
       method: "GET",
       credentials: "include",
       headers: {
