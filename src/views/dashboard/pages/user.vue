@@ -47,7 +47,7 @@ export default {
   methods: {
     async deleteItem(user){
       console.log('delete item', user)
-      const res = await fetch('http://43.206.149.140:3001/user/delete', {
+      const res = await fetch('http://54.65.83.255:3001/user/delete', {
       method: 'DELETE',
       credentials: 'include',
       headers: {
@@ -63,7 +63,7 @@ export default {
     },
 
     async getUser(){
-      const res = await fetch('http://43.206.149.140:3001/user/all', {
+      const res = await fetch('http://54.65.83.255:3001/user/all', {
             method: 'GET',
             credentials: 'include',
             headers: {
