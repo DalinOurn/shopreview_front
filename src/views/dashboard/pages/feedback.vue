@@ -45,7 +45,7 @@ export default {
   methods: {
     async deleteItem(feed){
       console.log('delete item', feed)
-      const res = await fetch('http://13.115.253.173:3001/feedback/delete', {
+      const res = await fetch('http://35.78.126.233:3001/feedback/delete', {
       method: 'DELETE',
       credentials: 'include',
       headers: {
@@ -61,7 +61,7 @@ export default {
     },
 
     async getFeed(){
-      const res = await fetch('http://13.115.253.173:3001/feedback/all', {
+      const res = await fetch('http://35.78.126.233:3001/feedback/all', {
             method: 'GET',
             credentials: 'include',
             headers: {
