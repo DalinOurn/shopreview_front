@@ -1,0 +1,9 @@
+version: '1.1'
+services:
+  mywebContainer:
+    container_name: mywebContainer
+    image: 'dalinourn/shoptest:$BUILD_NUMBER'
+    ports:
+      - "80:80"
+    
+    restart: "always"
