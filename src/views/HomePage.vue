@@ -35,7 +35,7 @@ export default {
     showMyDiv() {},
   },
   async created() {
-    const res = await fetch('http://52.194.242.173:3001/store/all', {
+    const res = await fetch('http://13.230.174.62:3001/store/all', {
       method: 'GET',
       credentials: 'include',
       headers: {
@@ -52,7 +52,7 @@ export default {
      stores(store) {
       console.log('watch store', store )
       for(let i=0; i<store.length; i++){
-        fetch(`http://52.194.242.173:3001/review/all?storeId=${store[i]._id}`, {
+        fetch(`http://13.230.174.62:3001/review/all?storeId=${store[i]._id}`, {
           method: 'GET',
           credentials: 'include',
         }).then( async (res) => {
