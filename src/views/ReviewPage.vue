@@ -23,7 +23,7 @@ export default {
   methods: {
     //get Review data
     async getReview(page) {
-      const res = await fetch(`http://13.230.16.58:3001/store/all?page=${page}`, {
+      const res = await fetch(`http://43.206.151.253:3001/store/all?page=${page}`, {
         method: "GET",
         credentials: "include",
         headers: {
@@ -49,7 +49,7 @@ export default {
     stores(store) {
       console.log('watch store', store )
       for(let i=0; i<store.length; i++){
-        fetch(`http://13.230.16.58:3001/review/all?storeId=${store[i]._id}`, {
+        fetch(`http://43.206.151.253:3001/review/all?storeId=${store[i]._id}`, {
           method: 'GET',
           credentials: 'include',
         }).then( async (res) => {
