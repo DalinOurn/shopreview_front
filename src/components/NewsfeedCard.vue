@@ -121,7 +121,7 @@ export default {
         console.log("watch post", posts);
         for (let i = 0; i < posts.length; i++) {
           fetch(
-            `http://13.230.174.62:3001/comment/all?userpostId=${posts[i]._id}`
+            `http://13.230.16.58:3001/comment/all?userpostId=${posts[i]._id}`
           ).then(async (res) => {
             const resData = await res.json();
             all_posts[i].comments = resData.data;

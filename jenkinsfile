@@ -8,7 +8,6 @@ pipeline {
         dockerImage = ''
     }
 
- 
     stages {
 
         stage('git clone frontend') {
@@ -17,12 +16,6 @@ pipeline {
 
             }
         }
-
-        // stage('Build') {
-        //     steps {
-        //         sh 'npm install '
-        //     }
-        // }
 
         stage('Building image') {
             steps{
@@ -47,20 +40,10 @@ pipeline {
                 }
             }
         }
-        
-
-        // stage('Docker Run') {
-        //     steps{
-        //         script {
-        //             dockerImage.run("-p 80:80 --rm --name mywebContainer")
-        //         }
-        //     }
-        // }
     }
  
     post{
     success{
-
         sh ''' 
         curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode="HTML" -d text="<b>Stage</b> : JENKINS Build \n<b>Status</b> : <i>Success</i> \n<b>Version</b>: ${BUILD_NUMBER} <b> \nWebsite </b> : Shopreview Frontend"
         '''
