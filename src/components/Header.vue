@@ -120,7 +120,7 @@ export default {
        
        if(!text) return
 
-       const res = await fetch(`http://18.183.151.10:3001/store/all?name=${text}`, {
+       const res = await fetch(`http://54.248.206.169:3001/store/all?name=${text}`, {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -149,7 +149,7 @@ export default {
     },
      async onLogout() {
       console.log('test')
-      const res = await fetch('http://18.183.151.10:3001/auth/logout', {
+      const res = await fetch('http://54.248.206.169:3001/auth/logout', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -164,7 +164,7 @@ export default {
     },
 
     async getFavorite(){
-        const user = await fetch('http://18.183.151.10:3001/auth/me', {
+        const user = await fetch('http://54.248.206.169:3001/auth/me', {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -174,7 +174,7 @@ export default {
 
       const userData = await user.json();
 
-      const get_favorites = await fetch(`http://18.183.151.10:3001/favorite/all?user_id=${userData._id}`, {
+      const get_favorites = await fetch(`http://54.248.206.169:3001/favorite/all?user_id=${userData._id}`, {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -193,7 +193,7 @@ export default {
 
     this.getFavorite()
 
-    const res = await fetch('http://18.183.151.10:3001/auth/me', {
+    const res = await fetch('http://54.248.206.169:3001/auth/me', {
       method: 'GET',
       credentials: 'include',
       headers: {
