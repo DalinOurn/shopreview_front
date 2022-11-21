@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     async onSubmit() {
-      const res = await fetch('http://35.78.239.132:3001/user/reset-password', {
+      const res = await fetch('http://18.181.187.93:3001/user/reset-password', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
