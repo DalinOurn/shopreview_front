@@ -81,7 +81,7 @@ export default {
   methods: {
     async onLogout() {
       console.log('test')
-      const res = await fetch('http://18.181.187.93:3001/auth/logout', {
+      const res = await fetch('http://13.231.118.87:3001/auth/logout', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -96,7 +96,7 @@ export default {
     },
   },
   async created() {
-    const res = await fetch('http://18.181.187.93:3001/auth/me', {
+    const res = await fetch('http://13.231.118.87:3001/auth/me', {
       method: 'POST',
       credentials: 'include',
       headers: {
