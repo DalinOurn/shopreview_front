@@ -1,4 +1,4 @@
-FROM node:latest as builder
+FROM node:14-alpine as builder
 WORKDIR /app
 
 # Copy the package.json and install dependencies

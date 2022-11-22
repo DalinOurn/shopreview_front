@@ -24,7 +24,7 @@ export default {
     async onSubmit(e) {
       e.preventDefault()
       this.message = false
-      const res = await fetch('http://35.78.87.212:3001/auth/register', {
+      const res = await fetch('http://18.179.40.45:3001/auth/register', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
