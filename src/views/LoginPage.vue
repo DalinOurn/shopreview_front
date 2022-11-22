@@ -19,7 +19,7 @@ export default {
     async onSubmit(e) {
       e.preventDefault()
       this.message = false
-      const res = await fetch('http://54.238.216.243:3001/auth/login', {
+      const res = await fetch('http://35.78.87.212:3001/auth/login', {
         method: 'POST',
         credentials: 'include',
         headers: {

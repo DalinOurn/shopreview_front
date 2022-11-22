@@ -131,7 +131,7 @@ export default {
   },
   methods: {
     async getPosts() {
-      const res = await fetch('http://54.238.216.243:3001/post/all', {
+      const res = await fetch('http://35.78.87.212:3001/post/all', {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -163,7 +163,7 @@ export default {
       let image = this.image
 
       //get user
-      const user = await fetch('http://54.238.216.243:3001/auth/me', {
+      const user = await fetch('http://35.78.87.212:3001/auth/me', {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -181,7 +181,7 @@ export default {
       let formData = new FormData()
       formData.append('file', this.fileImage)
 
-      const upload_image = await fetch('http://54.238.216.243:3001/upload/image', {
+      const upload_image = await fetch('http://35.78.87.212:3001/upload/image', {
         method: 'POST',
         credentials: 'include',
         body: formData,
@@ -197,8 +197,8 @@ export default {
         location: location,
       }
 
-      //http://54.238.216.243:3001/post/create
-      const post_create = await fetch('http://54.238.216.243:3001/post/create', {
+      //http://35.78.87.212:3001/post/create
+      const post_create = await fetch('http://35.78.87.212:3001/post/create', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -239,7 +239,7 @@ export default {
     this.getPosts()
   },
   async created() {
-    const res = await fetch('http://54.238.216.243:3001/auth/me', {
+    const res = await fetch('http://35.78.87.212:3001/auth/me', {
       method: 'GET',
       credentials: 'include',
       headers: {
