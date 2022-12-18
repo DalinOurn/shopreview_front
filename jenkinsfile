@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        registry = "dalinourn/shoptest1"
+        registry = "dalinourn/shoptest"
         registryCredential = 'docker_id'
         TELEGRAM_TOKEN=credentials('TOKEN')
         CHAT_ID =credentials('CHAT_ID')
