@@ -313,7 +313,7 @@ opacity: 0.5;
   border: 1px solid #eee;
   visibility: hidden;
   width: 500px;
-  height: 480px;
+  height: 481px;
   overflow: visible;
   background: #fff;
   border-radius: 10px;

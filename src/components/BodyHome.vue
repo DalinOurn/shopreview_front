@@ -125,7 +125,7 @@ export default {
 }
 
 .box-card .box .user-name .profile-card {
-  width: 80%;
+  width: 81%;
 }
 
 .box-card .box .user-name .hearth {

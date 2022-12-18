@@ -142,7 +142,7 @@ export default {
 }
 .wrapper_body_review {
   position: relative;
-  width: 80%;
+  width: 81%;
   height: auto;
   margin: 17vh auto;
 }

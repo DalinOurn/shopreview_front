@@ -1,8 +1,8 @@
 /* .btn_create_review {
     position: relative;
     margin: 15px auto;
-    width: 80%;
-    height: 80px;
+    width: 81%;
+    height: 81px;
     display: flex;
     align-items: center;
     background-color: yellow;
@@ -32,7 +32,7 @@
 
 .wrapper_body_review {
     position: relative;
-    width: 80%;
+    width: 81%;
     height: auto;
     margin: 5% auto;
 }
@@ -82,7 +82,7 @@
 
 .box_card_left .img-post img {
     width: 95%;
-    height: 80%;
+    height: 81%;
 }
 
 .box_card_right {

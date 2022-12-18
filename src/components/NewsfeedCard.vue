@@ -192,7 +192,7 @@ button {
 .wrapper_body_review {
   position: relative;
   margin: 12px auto;
-  width: 80%;
+  width: 81%;
   height: auto;
 }
 
@@ -201,7 +201,7 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  width: 80%;
+  width: 81%;
   height: 60vh;
   margin-bottom: 15px;
   margin: 0 auto;
@@ -227,7 +227,7 @@ button {
   height: 5%;
   width: 100%;
   padding-left: 25px;
-  opacity: 80%;
+  opacity: 81%;
 }
 
 .box_card_left .location_post img {
@@ -383,7 +383,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 .btn {  
-  width: 80px;
+  width: 81px;
   height: 50px;
   outline: 0;
   border: 2px solid #ccc;

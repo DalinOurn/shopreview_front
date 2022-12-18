@@ -1,7 +1,7 @@
 /* .btn_create_review {
     position: absolute;
-    width: 80%;
-    height: 80px;
+    width: 81%;
+    height: 81px;
     background-color: #E5E5E5;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ label {
 .wrapper_body_reviewnewsFeed {
     position: relative;
     margin: 12px auto;
-    width: 80%;
+    width: 81%;
     height: auto;
 }
 

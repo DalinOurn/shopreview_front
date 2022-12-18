@@ -9,8 +9,8 @@
             <img
               src="../assets/img-acc/forgetPass.png"
               alt=""
-              width="80"
-              height="80"
+              width="81"
+              height="81"
             />
             <br />
             <br />

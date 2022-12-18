@@ -6,7 +6,7 @@
     <div class="login-form">
       <div class="main-div">
         <div class="panel">
-          <img src="../assets/img-acc/forgetPass.png" alt="" width="80" height="80">
+          <img src="../assets/img-acc/forgetPass.png" alt="" width="81" height="81">
           <br/>
           <br/>
           <h2>Forget Password</h2>
