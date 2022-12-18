@@ -4,6 +4,6 @@ services:
     container_name: mywebContainer
     image: 'dalinourn/shoptest:$BUILD_NUMBER'
     ports:
-      - "81:81"
+      - "3001:3001"
     
     restart: "always"
