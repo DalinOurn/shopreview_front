@@ -13,7 +13,7 @@
     "mdb-vue-ui-kit": "^1.13.0",
     "popper.js": "^1.14.3",
     "swiper": "^8.1.5",
-    "vue": "^3.2.31",
+    "vue": "^3.2.47",
     "vue-cookies": "^1.8.1",
     "vue-router": "^4.0.14",
     "vuex": "^4.0.2"
